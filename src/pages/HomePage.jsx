@@ -1,15 +1,15 @@
 import { Hero } from "../components/Hero";
 import { HomeCards } from "../components/HomeCards";
-import { JobListings } from "../components/JobListings";
-import { ViewAllJobs } from "../components/ViewAllJobs";
+import { PlaceListings } from "../components/PlaceListings";
+import { ViewAllPlaces } from "../components/ViewAllPlaces";
 
 export const HomePage = () => {
   return (
     <>
       <Hero />
       <HomeCards />
-      <JobListings isHome={true} />
-      <ViewAllJobs />
+      <PlaceListings isHome={true} />
+      <ViewAllPlaces />
     </>
   );
 };

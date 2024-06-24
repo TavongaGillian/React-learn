@@ -1,0 +1,174 @@
+{
+  "places": [
+    {
+      "id": "1",
+
+      "title": "Northen Lights",
+      "type": "All year round",
+      "location": "Lapland, Finland",
+      "bestActivities": "Santa Claus Village, Arktikum, Aurora photography, Korouoma Canyon, Ranua Wildlife Park, Kakslauttanen Arctic Resort, Ylläs, etc ",
+      "budget": "$7K - $8K",
+      "region": {
+        "description": "Take your love of stargazing to new heights by admiring the stars amid the Northern Lights in the northernmost region of Finland. In the cooler months, Lapland is blanketed with snow, so make sure you bring the right clothes to watch the lights in comfort. Seeing the neon bands in the sky is a surreal experience you can enjoy while sledding or sitting in front of your cabin.",
+        "contactEmail": "tzvigumbu@gmail.com",
+        "contactPhone": " +91 562 222 6431"
+      }
+    },
+    {
+      "id": "2",
+      "title": "Eiffel Tower",
+      "type": "All year round",
+      "location": "Paris, France",
+      "bestActivities": "Eiffel Tower, Disneyland Paris, Versailes Palace, Seine River Dinner Cruise, Arc Triomphe, Louvre Museum",
+      "budget": "$7K - $8K",
+      "region": {
+        "description": "Eiffel Tower, wrought-iron structure in Paris that is among the most famous landmarks in the world. It is also a technological masterpiece in building-construction history. It was designed and built (1887–89) by Gustave Eiffel and named in his honor.",
+        "contactEmail": "tzvigumbu@gmail.com",
+        "contactPhone": "0291210896"
+      }
+    },
+    {
+      "id": "3",
+      "title": "Great Wall of China",
+      "type": "All year round",
+      "location": "Beijing, China",
+      "bestActivities": "Mutianyu, Badaling, Jinshanling, Simatai, Gubeikou, White water rafting, kayaking, bungee jumping, river surfing, gorge swings, zip lines, bridge slide, and bridge swing etc",
+      "budget": "$7K - $8K",
+      "region": {
+        "description": "The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states and Imperial China as protection against various nomadic groups from the Eurasian Steppe ",
+        "contactEmail": "milano@dolorsitamet.com",
+        "contactPhone": "02912178576"
+      }
+    },
+    {
+      "id": "4",
+      "title": "Victoria Falls",
+      "type": "All year round",
+      "bestActivities": "Adrenaline activities: White water rafting, kayaking, bungee jumping, river surfing, gorge swings, zip lines, bridge slide, and bridge swing, Wildlife Safaris in Hwange National Park, Wild Horizons Elephant Sanctuary, and Victoria Falls Private Game Reserve, Sunset boat cruise on the Zambezi River, dinner cruise on the Zambezi River, and Zambezi river walk, Visit Livingstone Island and swim in Devil's Pool, walk along Knife Edge Bridge, learn about the history of the Victoria Falls bridge, and explore traditional African culture",
+      "location": "Zimbabwe",
+      "budget": "$6K - $7K",
+      "region": {
+        "description": "The Victoria Falls presents a spectacular sight of awe-inspiring beauty and grandeur on the Zambezi River, forming a natural border between Zambia and Zimbabwe. It was described by the Kololo tribe living in the area as ‘Mosi-oa-Tunya’ – ‘The Smoke that Thunders’ for the immense spray and incredible noise caused by the rushing water. Victoria Falls is now also known as the greatest curtain of falling water in the world when its width and height are combined.",
+        "contactEmail": "contact@adipisicingelit.com",
+        "contactPhone": "555-555-5555"
+      }
+    },
+    {
+      "id": "5",
+      "title": "Basílica de la Sagrada Família",
+      "type": "All year round",
+      "bestActivities": "Park Guell, La Pedrera - Casa, White water rafting, kayaking, bungee jumping, river surfing, gorge swings, zip lines, bridge slide, and bridge swing, etc",
+      "location": "Barcelona, Spain ",
+      "budget": "$9K - $10K",
+      "region": {
+        "description": "The Basílica i Temple Expiatori de la Sagrada Família, otherwise known as Sagrada Família, is a church under construction in the Eixample district of Barcelona, Catalonia, Spain. It is the largest unfinished Catholic church in the world",
+        "contactEmail": "contact@consecteturadipisicing.com",
+        "contactPhone": "555-555-5555"
+      }
+    },
+    {
+      "id": "6",
+      "title": "Colossuem",
+      "type": "All year round",
+      "bestActivities": " Colosseum · 150,008. Historic Sites, Pantheon · 79,987. Ancient Ruins, Duomo di Milano · 58,836, Religious Sites, White water rafting, kayaking, bungee jumping, river surfing, gorge swings, zip lines, bridge slide, and bridge swing, etc",
+      "location": "Rome, Italy",
+      "budget": "$10K - $11K",
+      "region": {
+        "description": "The Colosseum is an elliptical amphitheatre in the centre of the city of Rome, Italy, just east of the Roman Forum. It is the largest ancient amphitheatre ever built, and is still the largest standing amphitheatre in the world, despite its age.",
+        "contactEmail": "contact@ipsumlorem.com",
+        "contactPhone": "555-555-5555"
+      }
+    },
+    {
+      "id": "7",
+      "title": "Historic Sanctuary of Machu Picchu",
+      "type": "All year round",
+      "location": "Peru",
+      "bestActivities": "White water rafting, kayaking, bungee jumping, river surfing, gorge swings, zip lines, bridge slide, and bridge swing, White water rafting, kayaking, bungee jumping, river surfing, gorge swings, zip lines, bridge slide, and bridge swing",
+      "budget": "$2K - $4K",
+      "region": {
+        "description": "The Historic Sanctuary of Machu Picchu is a 32,592 hectare UNESCO World Heritage Site in Peru's Cusco department, province of Urubamba. It's located on a high ridge in the Andes Mountains, above the Urubamba River valley, and surrounded by tropical mountain forest. The site is home to the Inca City of Machu Picchu, the Inca Trail, and other Inca and pre-Inca constructions",
+        "contactEmail": "contact@ipsumlorem.com",
+        "contactPhone": "+51 291 270 5716"
+      }
+    },
+    {
+      "id": "8",
+      "title": "Taj Mahal",
+      "type": "All year round",
+      "location": "Agra, India",
+      "bestActivities": "Ladakh, Taj Mahal, Kerala, Khajuraho, Varanasi, Rajasthan, White water rafting, kayaking, bungee jumping, river surfing, gorge swings, zip lines, bridge slide, and bridge swing ",
+      "budget": "$2K - $4K",
+      "region": {
+        "description": "The Taj Mahal is an ivory-white marble mausoleum on the right bank of the river Yamuna in Agra, Uttar Pradesh, India. It was commissioned in 1631 by the fifth Mughal emperor, Shah Jahan to house the tomb of his beloved wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself",
+        "contactEmail": "contact@ipsumlorem.com",
+        "contactPhone": " +91 562 222 6431"
+      }
+    },
+    {
+      "id": "9",
+      "title": "Louvre Museum",
+      "type": "All year round",
+      "location": "Paris, France",
+      "bestActivities": "Eiffel Tower, Disneyland Paris, Versailes Palace, Seine River Dinner Cruise, Arc Triomphe, Louvre Museum",
+      "budget": "$5K - 6K",
+      "region": {
+        "description": "The Louvre, or the Louvre Museum, is a national art museum in Paris, France. It is located on the Right Bank of the Seine in the city's 1st arrondissement and home to some of the most canonical works of Western art, including the Mona Lisa, Venus de Milo, and Winged Victory.",
+        "contactEmail": "tzodu@gmail.com",
+        "contactPhone": "+33 1 40 20 53 17"
+      }
+    },
+    {
+      "id": "10",
+      "title": "Tower of Pisa",
+      "type": "All year round",
+      "location": "Pisa, Italy",
+      "bestActivities": "Colosseum · 150,008. Historic Sites, Pantheon · 79,987. Ancient Ruins, Duomo di Milano · 58,836, Religious Sites ",
+      "budget": "$5K - 6K",
+      "region": {
+        "description": "The Leaning Tower of Pisa, or simply the Tower of Pisa, is the campanile, or freestanding bell tower, of Pisa Cathedral. It is known for its nearly four-degree lean, the result of an unstable foundation.",
+        "contactEmail": "tzvigumbu@gmail.com",
+        "contactPhone": "+39 050 835011"
+      }
+    },
+    {
+      "id": "11",
+      "title": "Bali",
+      "type": "All year round",
+      "location": "Bali, Indonesia",
+      "bestActivities": "White water rafting, kayaking, bungee jumping, river surfing, gorge swings, zip lines, bridge slide,",
+      "budget": "$5K - 6K",
+      "region": {
+        "description": "Bali is a province of Indonesia and the westernmost of the Lesser Sunda Islands. East of Java and west of Lombok, the province includes the island of Bali and a few smaller offshore islands, notably Nusa Penida, Nusa Lembongan, and Nusa Ceningan to the southeast.",
+        "contactEmail": "tumbu@gmail.com",
+        "contactPhone": "+61 2 6261 3305"
+      }
+    },
+    {
+      "id": "12",
+      "title": "Burj Khalifa",
+      "type": "All year round",
+      "location": "Dubai, UAE",
+      "bestActivities": "White water rafting, kayaking, bungee jumping, river surfing, gorge swings, zip lines, bridge slide,",
+      "budget": "$5K - 6K",
+      "region": {
+        "description": "Dubai is a city and emirate in the United Arab Emirates known for luxury shopping, ultramodern architecture and a lively nightlife scene. Burj Khalifa, an 830m-tall tower, dominates the skyscraper-filled skyline. At its foot lies Dubai Fountain, with jets and lights choreographed to music. On artificial islands just offshore is Atlantis, The Palm, a resort with water and marine-animal parks.",
+        "contactEmail": "tzvigumbu@gmail.com",
+        "contactPhone": "+971 4 888 8888"
+      }
+    },
+    {
+      "id": "13",
+      "title": "Buckingham Palace",
+      "type": "All year round",
+      "location": "London, UK",
+      "bestActivities": "Tower of London · 68,204. Historic Sites, The British Museum · 74,183. Speciality Museums, London Eye, Tower Bridge, Tower of london, Stonehenge, Wiltshire, Natural History Museum, London, Angel of the North, Gateshead, Roman Baths, Bath",
+      "budget": "$5K - 6K",
+      "region": {
+        "Best Activities": "Buckingham Palace is a royal residence in London, and the administrative headquarters of the monarch of the United Kingdom. Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality.",
+        "contactEmail": "tzvigumbu@gmail.com",
+        "contactPhone": "+44 303 123 7300"
+      }
+    }
+  ]
+}

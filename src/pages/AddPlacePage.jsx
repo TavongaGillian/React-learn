@@ -2,14 +2,14 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
-export const AddJobPage = ({ addJobSubmit }) => {
+export const AddPlacePage = ({ addPlaceSubmit }) => {
   const [title, setTitle] = useState("");
   const [type, setType] = useState("");
   const [location, setLocation] = useState("");
-  const [description, setDescription] = useState("");
-  const [salary, setSalary] = useState("");
-  const [companyName, setCompanyName] = useState("");
-  const [companyDescription, setCompanyDescription] = useState("");
+  const [bestActivities, setbestActivities] = useState("");
+  const [budget, setSalary] = useState("");
+  const [regionName, setregionName] = useState("");
+  const [regionDescription, setregionDescription] = useState("");
   const [contactEmail, setContactEmail] = useState("");
   const [contactPhone, setContactPhone] = useState("");
 
@@ -20,34 +20,33 @@ export const AddJobPage = ({ addJobSubmit }) => {
 
     console.log("submit button clicked");
 
-    const newJob = {
+    const newPlace = {
       title,
       type,
       location,
-      description,
-      salary,
-      company: {
-        name: companyName,
-        description: companyDescription,
+      bestActivities,
+      budget,
+      region: {
+        description: regionDescription,
         contactEmail,
         contactPhone,
       },
     };
-    addJobSubmit(newJob);
+    addPlaceSubmit(newPlace);
 
-    toast.success("Job added successfully");
+    toast.success("Place added successfully");
 
-    return navigate("/jobs");
+    return navigate("/places");
   };
 
   return (
     <>
-      <section className='bg-indigo-50'>
+      <section className='bg-blue-50'>
         <div className='container m-auto max-w-2xl py-24'>
           <div className='bg-white px-6 py-8 mb-4 shadow-md rounded-md border m-4 md:m-0'>
             <form onSubmit={submitForm}>
               <h2 className='text-3xl text-center font-semibold mb-6'>
-                Add Job
+                Add Place
               </h2>
 
               <div className='mb-4'>
@@ -55,7 +54,7 @@ export const AddJobPage = ({ addJobSubmit }) => {
                   htmlFor='type'
                   className='block text-gray-700 font-bold mb-2'
                 >
-                  Job Type
+                  Best Season
                 </label>
                 <select
                   id='type'
@@ -65,23 +64,23 @@ export const AddJobPage = ({ addJobSubmit }) => {
                   value={type}
                   onChange={(e) => setType(e.target.value)}
                 >
-                  <option value='Full-Time'>Full-Time</option>
-                  <option value='Part-Time'>Part-Time</option>
-                  <option value='Remote'>Remote</option>
-                  <option value='Internship'>Internship</option>
+                  <option value='All year round'>All year round</option>
+                  <option value='Summer'>Summer</option>
+                  <option value='Winter'>Winter</option>
+                  <option value='Spring'>Spring</option>
                 </select>
               </div>
 
               <div className='mb-4'>
                 <label className='block text-gray-700 font-bold mb-2'>
-                  Job Listing Name
+                  Place Listing Name
                 </label>
                 <input
                   type='text'
                   id='title'
                   name='title'
                   className='border rounded w-full py-2 px-3 mb-2'
-                  placeholder='eg. Beautiful Apartment In Miami'
+                  placeholder="eg. Earth's highest mountain above sea level "
                   required
                   value={title}
                   onChange={(e) => setTitle(e.target.value)}
@@ -92,16 +91,16 @@ export const AddJobPage = ({ addJobSubmit }) => {
                   htmlFor='description'
                   className='block text-gray-700 font-bold mb-2'
                 >
-                  Description
+                  Best Activities
                 </label>
                 <textarea
-                  id='description'
-                  name='description'
+                  id='bestActivities'
+                  name='bestActivities'
                   className='border rounded w-full py-2 px-3'
                   rows='4'
-                  placeholder='Add any job duties, expectations, requirements, etc'
-                  value={description}
-                  onChange={(e) => setDescription(e.target.value)}
+                  placeholder='Add any activities eg swimming, golf, etc'
+                  value={bestActivities}
+                  onChange={(e) => setbestActivities(e.target.value)}
                 ></textarea>
               </div>
 
@@ -110,27 +109,27 @@ export const AddJobPage = ({ addJobSubmit }) => {
                   htmlFor='type'
                   className='block text-gray-700 font-bold mb-2'
                 >
-                  Salary
+                  Budget
                 </label>
                 <select
-                  id='salary'
-                  name='salary'
+                  id='budget'
+                  name='budget'
                   className='border rounded w-full py-2 px-3'
                   required
-                  value={salary}
-                  onChange={(e) => setSalary(e.target.value)}
+                  value={budget}
+                  onChange={(e) => setBudget(e.target.value)}
                 >
-                  <option value='Under $50K'>Under $50K</option>
-                  <option value='$50K - 60K'>$50K - $60K</option>
-                  <option value='$60K - 70K'>$60K - $70K</option>
-                  <option value='$70K - 80K'>$70K - $80K</option>
-                  <option value='$80K - 90K'>$80K - $90K</option>
-                  <option value='$90K - 100K'>$90K - $100K</option>
-                  <option value='$100K - 125K'>$100K - $125K</option>
-                  <option value='$125K - 150K'>$125K - $150K</option>
-                  <option value='$150K - 175K'>$150K - $175K</option>
-                  <option value='$175K - 200K'>$175K - $200K</option>
-                  <option value='Over $200K'>Over $200K</option>
+                  <option value='Under $5K'>Under $5K</option>
+                  <option value='$5K - 6K'>$5K - $6K</option>
+                  <option value='$6K - 7K'>$6K - $7K</option>
+                  <option value='$7K - 80K'>$7K - $8K</option>
+                  <option value='$8K - 90K'>$8K - $9K</option>
+                  <option value='$9K - 100K'>$9K - $10K</option>
+                  <option value='$10K - 12K'>$10K - $12K</option>
+                  <option value='$12K - 15K'>$12K - $15K</option>
+                  <option value='$15K - 17K'>$15K - $17K</option>
+                  <option value='$17K - 20K'>$17K - $20K</option>
+                  <option value='Over $20K'>Over $20K</option>
                 </select>
               </div>
 
@@ -143,48 +142,30 @@ export const AddJobPage = ({ addJobSubmit }) => {
                   id='location'
                   name='location'
                   className='border rounded w-full py-2 px-3 mb-2'
-                  placeholder='Company Location'
+                  placeholder='City, Country'
                   required
                   value={location}
                   onChange={(e) => setLocation(e.target.value)}
                 />
               </div>
 
-              <h3 className='text-2xl mb-5'>Company Info</h3>
+              <h3 className='text-2xl mb-5'>More Information</h3>
 
               <div className='mb-4'>
                 <label
-                  htmlFor='company'
+                  htmlFor='region_description'
                   className='block text-gray-700 font-bold mb-2'
                 >
-                  Company Name
-                </label>
-                <input
-                  type='text'
-                  id='company'
-                  name='company'
-                  className='border rounded w-full py-2 px-3'
-                  placeholder='Company Name'
-                  value={companyName}
-                  onChange={(e) => setCompanyName(e.target.value)}
-                />
-              </div>
-
-              <div className='mb-4'>
-                <label
-                  htmlFor='company_description'
-                  className='block text-gray-700 font-bold mb-2'
-                >
-                  Company Description
+                  Region Description
                 </label>
                 <textarea
-                  id='company_description'
-                  name='company_description'
+                  id='region_description'
+                  name='region_description'
                   className='border rounded w-full py-2 px-3'
                   rows='4'
-                  placeholder='What does your company do?'
-                  value={companyDescription}
-                  onChange={(e) => setCompanyDescription(e.target.value)}
+                  placeholder='What does your region do?'
+                  value={regionDescription}
+                  onChange={(e) => setregionDescription(e.target.value)}
                 ></textarea>
               </div>
 
@@ -200,7 +181,7 @@ export const AddJobPage = ({ addJobSubmit }) => {
                   id='contact_email'
                   name='contact_email'
                   className='border rounded w-full py-2 px-3'
-                  placeholder='Email address for applicants'
+                  placeholder='Email address '
                   required
                   value={contactEmail}
                   onChange={(e) => setContactEmail(e.target.value)}
@@ -218,7 +199,7 @@ export const AddJobPage = ({ addJobSubmit }) => {
                   id='contact_phone'
                   name='contact_phone'
                   className='border rounded w-full py-2 px-3'
-                  placeholder='Optional phone for applicants'
+                  placeholder='Phone number'
                   value={contactPhone}
                   onChange={(e) => setContactPhone(e.target.value)}
                 />
@@ -226,10 +207,10 @@ export const AddJobPage = ({ addJobSubmit }) => {
 
               <div>
                 <button
-                  className='bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline'
+                  className='bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline'
                   type='submit'
                 >
-                  Add Job
+                  Add Place
                 </button>
               </div>
             </form>
