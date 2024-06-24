@@ -3,20 +3,20 @@ import React from "react";
 import { useState } from "react";
 import { toast } from "react-toastify";
 
-export const EditJobPAge = ({ updateJobSubmit }) => {
-  const jobs = useLoaderData();
+export const EditPlacePAge = ({ updatePlaceSubmit }) => {
+  const places = useLoaderData();
 
-  const [title, setTitle] = useState(jobs.title);
-  const [type, setType] = useState(jobs.type);
-  const [location, setLocation] = useState(jobs.location);
-  const [description, setDescription] = useState(jobs.description);
-  const [salary, setSalary] = useState(jobs.salary);
-  const [companyName, setCompanyName] = useState(jobs.company.name);
-  const [companyDescription, setCompanyDescription] = useState(
-    jobs.company.description
+  const [title, setTitle] = useState(places.title);
+  const [type, setType] = useState(places.type);
+  const [location, setLocation] = useState(places.location);
+  const [description, setDescription] = useState(places.description);
+  const [budget, setSalary] = useState(places.budget);
+  const [regionName, setregionName] = useState(places.region.name);
+  const [regionDescription, setregionDescription] = useState(
+    places.region.description
   );
-  const [contactEmail, setContactEmail] = useState(jobs.company.contactEmail);
-  const [contactPhone, setContactPhone] = useState(jobs.contactPhone);
+  const [contactEmail, setContactEmail] = useState(places.region.contactEmail);
+  const [contactPhone, setContactPhone] = useState(places.contactPhone);
 
   const navigate = useNavigate();
   const { id } = useParams();
@@ -24,29 +24,29 @@ export const EditJobPAge = ({ updateJobSubmit }) => {
   const submitForm = (event) => {
     event.preventDefault();
 
-    const updatedJob = {
+    const updatedPlace = {
       id,
       title,
       type,
       location,
       description,
-      salary,
-      company: {
-        name: companyName,
-        description: companyDescription,
+      budget,
+      region: {
+        name: regionName,
+        description: regionDescription,
         contactEmail,
         contactPhone,
       },
     };
-    updateJobSubmit(updatedJob);
+    updatePlaceSubmit(updatedPlace);
 
-    toast.success("Job updated successfully");
+    toast.success("Place updated successfully");
 
-    return navigate(`/jobs/${id}`);
+    return navigate(`/places/${id}`);
   };
 
   return (
-    <section className='bg-indigo-50'>
+    <section className='bg-blue-50'>
       <div className='container m-auto max-w-2xl py-24'>
         <div className='bg-white px-6 py-8 mb-4 shadow-md rounded-md border m-4 md:m-0'>
           <form onSubmit={submitForm}>
@@ -59,7 +59,7 @@ export const EditJobPAge = ({ updateJobSubmit }) => {
                 htmlFor='type'
                 className='block text-gray-700 font-bold mb-2'
               >
-                Job Type
+                Place Type
               </label>
               <select
                 id='type'
@@ -78,7 +78,7 @@ export const EditJobPAge = ({ updateJobSubmit }) => {
 
             <div className='mb-4'>
               <label className='block text-gray-700 font-bold mb-2'>
-                Job Listing Name
+                Place Listing Name
               </label>
               <input
                 type='text'
@@ -103,7 +103,7 @@ export const EditJobPAge = ({ updateJobSubmit }) => {
                 name='description'
                 className='border rounded w-full py-2 px-3'
                 rows='4'
-                placeholder='Add any job duties, expectations, requirements, etc'
+                placeholder='Add any place duties, expectations, requirements, etc'
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
               ></textarea>
@@ -117,11 +117,11 @@ export const EditJobPAge = ({ updateJobSubmit }) => {
                 Salary
               </label>
               <select
-                id='salary'
-                name='salary'
+                id='budget'
+                name='budget'
                 className='border rounded w-full py-2 px-3'
                 required
-                value={salary}
+                value={budget}
                 onChange={(e) => setSalary(e.target.value)}
               >
                 <option value='Under $50K'>Under $50K</option>
@@ -147,48 +147,48 @@ export const EditJobPAge = ({ updateJobSubmit }) => {
                 id='location'
                 name='location'
                 className='border rounded w-full py-2 px-3 mb-2'
-                placeholder='Company Location'
+                placeholder='region Location'
                 required
                 value={location}
                 onChange={(e) => setLocation(e.target.value)}
               />
             </div>
 
-            <h3 className='text-2xl mb-5'>Company Info</h3>
+            <h3 className='text-2xl mb-5'>region Info</h3>
 
             <div className='mb-4'>
               <label
-                htmlFor='company'
+                htmlFor='region'
                 className='block text-gray-700 font-bold mb-2'
               >
-                Company Name
+                region Name
               </label>
               <input
                 type='text'
-                id='company'
-                name='company'
+                id='region'
+                name='region'
                 className='border rounded w-full py-2 px-3'
-                placeholder='Company Name'
-                value={companyName}
-                onChange={(e) => setCompanyName(e.target.value)}
+                placeholder='region Name'
+                value={regionName}
+                onChange={(e) => setregionName(e.target.value)}
               />
             </div>
 
             <div className='mb-4'>
               <label
-                htmlFor='company_description'
+                htmlFor='region_description'
                 className='block text-gray-700 font-bold mb-2'
               >
-                Company Description
+                region Description
               </label>
               <textarea
-                id='company_description'
-                name='company_description'
+                id='region_description'
+                name='region_description'
                 className='border rounded w-full py-2 px-3'
                 rows='4'
-                placeholder='What does your company do?'
-                value={companyDescription}
-                onChange={(e) => setCompanyDescription(e.target.value)}
+                placeholder='What does your region do?'
+                value={regionDescription}
+                onChange={(e) => setregionDescription(e.target.value)}
               ></textarea>
             </div>
 
@@ -230,10 +230,10 @@ export const EditJobPAge = ({ updateJobSubmit }) => {
 
             <div>
               <button
-                className='bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline'
+                className='bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline'
                 type='submit'
               >
-                Update Job
+                Update Place
               </button>
             </div>
           </form>
